@@ -53,6 +53,106 @@
 
         </ul>
     </section>
+
+    <h1 class="title">Chaining</h1>
+    <section>
+        <h2>element.class</h2>
+        <ul>
+            <li><code>div.btn{...}</code></li>
+            <li>select all &lt;div&gt; elemnts with the class .btn</li>
+        </ul>
+
+        <h2>element#id</h2>
+        <ul>
+            <li><code>div#main{...}</code></li>
+            <li>select the &lt;div&gt; element having id #main</li>
+        </ul>
+
+        <h2>element[attribute='value']</h2>
+        <ul>
+            <li><code>input[type='text']{...}</code></li>
+            <li>select all &lt;input&gt; elements with type=text</li>
+        </ul>
+
+        <h2>.class.class</h2>
+        <ul>
+            <li><code>.btn.warning{...}</code></li>
+            <li>select all elemnts having both classes .btn and .warning</li>
+        </ul>
+
+        <h2>.class#id</h2>
+        <ul>
+            <li><code>.btn#signup{...}</code></li>
+            <li>select the element having the class .btn and id #signup</li>
+        </ul>
+    </section>
+
+    <h1 class="title">Combinators</h1>
+
+    <section>
+        <h2>selector ⎵ selector</h2>
+        <ul>
+            <li><code>ul li{...}</code></li>
+            <li>Within ul, select all il.</li>
+        </ul>
+        <hr>
+        <ul>
+            <li><code>div  .card{...}</code></li>
+            <li>Within div, select all elements with the class .cards (not only direct children elements).</li>
+        </ul>
+        <hr>
+        <ul>
+            <li><code>body table td{...}</code></li>
+            <li>Select all cells within tables inside body.</li>
+        </ul>
+        <hr>
+        <ul>
+            <li><code>header nav .btn{...}</code></li>
+            <li>select all elements with the class .btn within nav that's inside header.</li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h2>Selecto > Selector</h2>
+
+        <ul>
+            <li><code>div > h1{...}</code></li>
+            <li>Select all &lt;h1&gt; elements that are direct children of &lt;div&gt;.</li>
+        </ul>
+        <hr>
+        <ul>
+            <li><code>div.article > p{..}</code></li>
+            <li>Select all &lt;p&gt; elements that are direct children of &lt;div&gt; with class .article</li>
+        </ul>
+
+    </section>
+
+    <section>
+        
+        <code>
+                <p>&lt;div&gt;</p>
+                <p>&nbsp; &nbsp; &lt;h1&gt;Topic&lt;/h1&gt;</p>
+                <p>&nbsp; &nbsp; &lt;p&gt;article 1&lt;/p&gt;</p>
+                <p>&nbsp; &nbsp; &lt;p&gt;article 2&lt;/p&gt;</p>
+                <p>&lt;/div&gt;</p>
+        </code>
+        <h2>Selector + Selector</h2>
+        <ul>
+            <li><code>h1 + p{...}</code></li>
+            <li>Selects the next immediate  sibling to h1.</li>
+            <li><span class="highlight">article 1</span> is selected</li>
+        </ul>
+
+        <h2>Selector ~ Selector</h2>
+        <ul>
+            <li><code>h1 ~ p{...}</code></li>
+            <li>Selects all siblings after h1.</li>
+            <li> <span class="highlight">article 1</span> and <span class="highlight">article 2</span> are selected</li>
+        </ul>
+    </section>
+
+
 </div>
 
     <script src="./app.js"></script>

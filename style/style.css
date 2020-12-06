@@ -5,7 +5,7 @@
     --bg: #F5F5F5; 
     --box: #dbdbdb; 
 	--text: #505050; 
-	--blue: #5ac5d8; 
+	--blue: #abced4; 
 }
 /* RESETTING */
 *,*::before,*::after{
@@ -113,13 +113,7 @@ b{
 	width:95%;
 	z-index: -1;
 }
-.grid{
-	display: grid; 
-	grid-template-columns:20% auto auto ;
-}
-.grid div{
-	padding: 1em; 
-}
+
 
 
 
