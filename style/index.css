@@ -1,61 +1,37 @@
 
-.text-box{
-    min-height: 50px;
-    width: 300px;
-    border-radius: 5px;
-    border: 2px dashed #abced4;
-    background: #abced444;
-    margin:auto; 
-    padding: 1rem; 
-    font-size: 4rem;
-    text-align: center;
-    box-shadow: -5px -5px #abced444;
-   
+
+
+#hover:hover{
+	border: 2px solid #abced4; 
 }
 
-#border-box{
-    width:300px; height:150px;
-    padding:1em;
-    box-sizing: border-box;
+#active{
+    cursor: pointer;
 }
-#content-box{
-    width:300px; height:150px;
-    padding:1em;
-    box-sizing: content-box;
-}
-#width{
-    width: 80%;
+#active:active{
+	border: 2px solid #abced4; 
 }
 
-#height{
-    height: 40vh;
-    
+#first > .cir:first-child{
+    background: #abced4;
 }
 
-#min-width{
-    width: 97%; 
-    min-width: 500px;
+#last > .cir:last-child{
+    background: #abced4;
 }
 
-#min-height{
-    min-height: 140px;
-    
+#even > .cir:nth-child(even){
+    background: #abced4;
 }
 
-#max-width{
-    width: 97%; 
-    max-width: 600px;
+#odd > .cir:nth-child(odd){
+    background: #abced4;
 }
 
-#max-height{
-    max-height: 300px;
-
+#fourth > .cir:nth-child(4){
+    background: #abced4;
 }
 
-#default-width{
-    width: auto;
-}
-
-#fit-width{
-    width: fit-content;
+#hops > .cir:nth-child(2n+1){
+    background: #abced4;
 }

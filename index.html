@@ -152,6 +152,109 @@
         </ul>
     </section>
 
+    <h1 class="title">Psudo Classes</h1>
+    <section>
+        <h2>:hover</h2>
+        <ul>
+            <li>Apply style when element is hovred over</li>
+        </ul>
+        <div id="hover" class="text-box">
+            Hover here.
+        </div>
+    </section>
+    <section>
+        <h2>:active</h2>
+        <ul>
+            <li>Apply style when element is clicked on</li>
+        </ul>
+        <div id="active" class="text-box">
+            Click here.
+        </div>
+    </section>
+    <section>
+        <h2>:first</h2> or <h2>:first-child</h2>
+        <ul><li>Apply style on the first element.</li></ul>
+        <div id="first" class="text-box">
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>:last</h2> or <h2>:last-child</h2>
+        <ul><li>Apply style on the last element.</li></ul>
+        <div id="last" class="text-box">
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+        </div>
+
+    </section>
+    <section>
+        <h2>:nth-child(nth)</h2>
+        <ul><li>where <code>(nth): odd | even | (order) | (hops n +order)</code></li></ul>
+
+        <h2>(odd)</h2>
+        <ul>
+            <li><code>:nth-child(odd)</code></li>
+            <li>every element whose index is odd</li>
+        </ul>
+        <div id="odd" class="text-box">
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+        </div>
+
+        <h2>(even)</h2>
+        <ul>
+            <li><code>:nth-child(even)</code></li>
+            <li>every elememt whose index is even</li>
+        </ul>
+        <div id="even" class="text-box">
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+        </div>
+
+        <h2>(order)</h2>
+        <ul><li><code>:nth-child(4)</code></li>
+            <li>4<sup>th</sup> element</li>
+        </ul>
+        <div id="fourth" class="text-box">
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+        </div>
+
+        <h2>(hops n +order)</h2>
+        <ul>
+            <li><code>:nth-child(2n+1)</code></li>
+            <li>every second element (2 hopes) after the 1st element</li>
+        </ul>
+        <div id="hops" class="text-box">
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+            <div class="cir"></div>
+        </div>
+
+    </section>
+
+    <h1 class="title">Psudo Elements</h1>
+
 
 </div>
 

@@ -113,6 +113,31 @@ b{
 	width:95%;
 	z-index: -1;
 }
+.text-box{
+	min-height: 50px;
+	  
+    width: fit-content;
+    border-radius: 5px;
+    border: 2px dashed #abced4;
+    background: #abced444;
+    margin:auto; 
+    padding: 1rem; 
+    font-size: 4rem;
+    text-align: center;
+    box-shadow: -5px -5px #abced444;
+    transition: all 1s ease-in;
+   
+}
+
+.cir{
+	width:40px; height:40px;
+	margin: .2em; 
+	background: #e0e0e0;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+
 
 
 
